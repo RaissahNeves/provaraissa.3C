@@ -5,15 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <title>Prov3C</title>
 </head>
 <body>
-    <div>
-        <h1>login</h1>
-        <form>
-            <input type="text" placeholder="Digite seu e-mail" id="e-mail"><br><br>
-            <input type="password" placeholder="Digite sua senha" id="senha"><br><br>
-            <input type="submit" onclick="logar(); return false">
+    <div class="page">
+        <form class="formLogin">
+
+            <h1>login</h1>
+            <p>...................................................</p>
+
+            <h2>Email</h2>
+            <input class="cont" type="text" placeholder="Digite seu e-mail" id="e-mail"><br>
+            <h2>Senha</h2>
+            <input class="cont" type="password" placeholder="Digite sua senha" id="senha"><br>
+            <input class="cont" type="submit" onclick="logar(); return false" id="bnt">
         </form>
     </div>
     <script>
@@ -21,7 +27,7 @@
             var login = document.getElementById('e-mail').value;
             var senha = document.getElementById('senha').value;
 
-            if(login == "raissa" && senha == "pirulito"){
+            if(login == "raissa" && senha == "12345"){
                 alert('logado com sucesso');
                 location.href ="inicio.html";
             }
